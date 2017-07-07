@@ -111,7 +111,7 @@ def threesum(array,target):
     
 print threesum(array,10)
 
-#--------------------------------------------rotated sorted array
+#-------------------------------------------- find minimum in rotated sorted array
 array =[5,6,7,1,2,3,4]
 
 def getmin(array):
@@ -135,7 +135,9 @@ def getmin(array):
         
 getmin(array)
 
-#-------------------------------------------- largest rectange   O(N)
+#-------------------------------------------- largest rectange in Histogram O(N)
+#Given n non-negative integers representing the histogram's bar height where the width of each bar is 1
+#find the area of largest rectangle in the histogram.
 array =[2,1,5,6,2,3]
 
 def maxRectArea(array): 
@@ -178,6 +180,7 @@ def ispalindrome(num):
 ispalindrome(12345654321)
 
 #-------------------------------------------- search in a 2D matrix (sorted both horizntal and vertical) go daignoal 
+#Write an efficient algorithm that searches for a value in an m x n matrix.
 
 mat = [[1,3,5,7],[10,11,16,20],[23,30,34,50]]
 mat = [[1,3,5],[10,11,16],[23,30,34],[25,31,50]]
@@ -208,6 +211,8 @@ def getpos(mat,value):
 getpos(mat,50)
 
 #-------------------------------------------- search duplicate element start end from array 二分法 O(logN)
+#Given a sorted array of integers, find the starting and ending position of a given target value.
+
 array =[1,2,2,3,4,5,5,5,5,7,8,8,9]
 
 def getelem(array,num):
@@ -233,6 +238,9 @@ print getelem(array,2)
 
 
 #-------------------------------------------- search insert position in array, exist return postion 二分法  O(logN)
+#Given a sorted array and a target value, return the index if the target is found. 
+#If not, return the index where it would be if it were inserted in order.
+
 array =[1,2,3,6,8,9,11,15]
 
 def getinsertpos(array,num):
@@ -249,6 +257,8 @@ def getinsertpos(array,num):
 print getinsertpos(array,14)
 
 #-------------------------------------------- get peak element in array 二分法 O(logN)
+#A peak element is an element that is greater than its neighbors.
+
 array =[1,2,3,4,5,9,11,10]
 
 def findpeakelem(array):

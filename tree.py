@@ -334,6 +334,9 @@ def isSame(root1,root2):
 print isSame(root,root)
 
 # ------------------------------------------------------------------------------Is Balanced tree
+# a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of 
+# every node never differ by more than 1.
+
 def isBalanced(root):
     if root==None:
         return True
@@ -454,6 +457,8 @@ root.right.right = Node(8)
 print isvalidtree(root)
     
 # ----------------------------------------------------binary tree path
+#Given a binary tree, return all root-to-leaf paths.
+
 def gettreepath(root):
     if root==None:
         return []
